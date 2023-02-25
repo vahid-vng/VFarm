@@ -1,0 +1,34 @@
+@media screen and (max-width: 1400px) {
+}
+
+@media screen and (max-width: 1200px) {
+}
+
+@media screen and (max-width: 992px) {
+    .location-box{
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .location-icon{
+        width: 3rem !important;
+        height: 3rem;
+    }
+}
+
+@media screen and (max-width: 768px) {
+
+}
+
+@media screen and (max-width: 576px) {
+}
+
+@media screen and (max-width: 460px) {
+}
+
+@media screen and (max-width: 410px) {
+}
+
+/* @media screen and (max-width: 350px) {
+
+} */

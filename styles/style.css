@@ -1,0 +1,530 @@
+@import "./reset.css";
+@import "./grid.css";
+@import "./font.css";
+/* Reset Styles */
+a {
+  text-decoration: none;
+}
+
+/* Components */
+.d-flex {
+  display: flex;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.align-center {
+  align-items: center;
+}
+
+.heading {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 6rem;
+}
+.heading div img {
+  width: 8rem;
+  height: 1.5rem;
+}
+.heading h3 {
+  color: #1fa12e;
+  font-size: 4rem;
+  font-weight: 700;
+  text-transform: capitalize;
+}
+.heading p {
+  font-size: 1.5rem;
+  color: #757575;
+  max-width: 57rem;
+}
+
+/* Styles */
+body {
+  direction: rtl;
+  font-family: "IRANSans";
+  line-height: 1.6;
+  color: #353535;
+  background-color: #ffffff;
+}
+
+/* Header */
+.header {
+  background-color: #f4f9ff;
+  padding: 3.5rem 0;
+}
+.header .logo {
+  font-family: "IRANSans Black";
+  font-size: 5rem;
+  color: #1fa12e;
+}
+.header .location-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+.header .location-icon {
+  color: #1fa12e;
+  font-size: 1.8rem;
+}
+.header .location-title {
+  color: #222222;
+  font-size: 1.8rem;
+  font-weight: 700;
+  text-transform: capitalize;
+}
+.header .location-desc {
+  color: #757575;
+  font-size: 1.5rem;
+}
+
+.nav {
+  background-color: #fff;
+  border-radius: 5rem;
+}
+.nav .menu {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.nav .menu-item {
+  cursor: pointer;
+  padding: 2rem 0;
+}
+.nav .menu-item:first-child {
+  margin-right: 5rem;
+}
+.nav .menu-item:last-child {
+  background-color: #1fa12e;
+  border-radius: 5rem;
+  padding-right: 5rem;
+  padding-left: 5rem;
+}
+.nav .menu-item:hover .menu-link {
+  color: #1fa12e;
+}
+.nav .menu-item:hover .menu-link--active {
+  color: #fff;
+}
+.nav .menu-link {
+  color: #222222;
+  transition: color 200ms ease-in;
+}
+.nav .menu-link--active {
+  color: #fff;
+}
+
+.header-img {
+  height: 79rem;
+  background-image: url("../images/asset 44.jpeg");
+  width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+}
+.header-img .header-cover {
+  position: absolute;
+  width: 100%;
+  height: 79rem;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 4;
+}
+.header-img .header-caption {
+  position: absolute;
+  z-index: 5;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+}
+.header-img .header-caption p {
+  font-size: 2rem;
+  font-family: "IRANSans Medium";
+  font-weight: 700;
+  color: #1fa12e;
+}
+.header-img .header-caption h2 {
+  font-size: 8.2rem;
+  font-family: "IRANSans Black";
+  font-weight: 300;
+  color: #fff;
+}
+.header-img .header-caption a {
+  font-weight: 500;
+  background-color: #1fa12e;
+  color: #fff;
+  padding: 1.5rem 4.5rem;
+  border-radius: 5rem;
+  border: 0.2rem solid #1fa12e;
+  transition: all 200ms ease-in;
+}
+.header-img .header-caption a:hover {
+  background-color: transparent;
+  color: #1fa12e;
+  border: 0.2rem solid #1fa12e;
+}
+
+.features {
+  padding: 10rem 0;
+}
+.features .feature {
+  background-color: #f4f9ff;
+  padding: 3rem 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: 1rem;
+  border-radius: 1rem;
+  transition: all 200ms ease-in;
+}
+.features .feature:hover {
+  background-color: #fff;
+  box-shadow: 0 0.5rem 1rem #757575;
+}
+.features .feature .fa-carrot {
+  width: 8rem;
+  height: 8rem;
+  color: #1fa12e;
+}
+.features .feature h3 {
+  font-size: 2.6rem;
+  font-weight: 600;
+  text-transform: capitalize;
+}
+.features .feature p {
+  color: #757575;
+  font-size: 1.5rem;
+}
+.features .feature a {
+  font-weight: 500;
+  background-color: #1fa12e;
+  color: #fff;
+  padding: 0.5rem 1.5rem;
+  border: 0.2rem solid #1fa12e;
+  border-radius: 5rem;
+  transition: all 200ms ease-in;
+}
+.features .feature a:hover {
+  background-color: #fff;
+  color: #1fa12e;
+  border: 0.2rem solid #1fa12e;
+}
+
+.about-us {
+  padding: 10rem 0;
+  background-color: #f4f9ff;
+}
+.about-us .about-img img {
+  width: 100%;
+  border-radius: 1rem;
+}
+.about-us .about-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 1.5rem;
+}
+.about-us .about-content h2 {
+  font-size: 4rem;
+  font-weight: 700;
+  text-transform: capitalize;
+  color: #222222;
+}
+.about-us .about-content h6 {
+  font-size: 20px;
+  text-transform: capitalize;
+  color: #222222;
+}
+.about-us .about-content p {
+  font-size: 1.5rem;
+  color: #757575;
+}
+
+.products {
+  padding: 10rem 0;
+}
+.products .product-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 2rem;
+}
+.products .product-content h2 {
+  font-size: 4rem;
+  font-weight: 700;
+  text-transform: capitalize;
+  color: #222222;
+}
+.products .product-content h6 {
+  font-size: 2rem;
+  color: #1fa12e;
+}
+.products .product-content p {
+  font-size: 1.5rem;
+  color: #757575;
+}
+.products .product-content .product-contact {
+  background-color: #98c7e2;
+  border-radius: 1rem;
+  padding: 3rem;
+  text-align: center;
+}
+.products .product-content .product-contact h4 {
+  font-size: 2rem;
+  font-weight: 700;
+  text-transform: capitalize;
+  margin-bottom: 0.7rem;
+  color: #fff;
+}
+.products .product-content .product-contact h3 {
+  font-size: 4rem;
+  font-weight: 700;
+  text-transform: capitalize;
+  color: #fff;
+}
+.products .product-img img {
+  width: 100%;
+  border-radius: 1rem;
+}
+
+.services {
+  background-color: #f4f9ff;
+  padding: 10rem 0;
+}
+.services .service-img img {
+  width: 100%;
+  height: auto;
+}
+.services .service {
+  padding: 5rem;
+  background-color: #fff;
+  text-align: center;
+}
+.services .service .fa-leaf {
+  width: 6rem;
+  height: 6rem;
+  color: #1fa12e;
+}
+.services .service h4 {
+  font-size: 2.2rem;
+  font-weight: 600;
+  color: #222222;
+  text-transform: capitalize;
+}
+
+.counter {
+  padding: 10rem 0;
+}
+.counter .counter-box {
+  text-align: center;
+}
+.counter .counter-box .counter-box-icon {
+  width: 4rem;
+  height: 4rem;
+}
+.counter .counter-box .counter-box-icon--red,
+.counter .counter-box .title--red {
+  color: #f44026;
+}
+.counter .counter-box .counter-box-icon--yellow,
+.counter .counter-box .title--yellow {
+  color: #fec422;
+}
+.counter .counter-box .counter-box-icon--orange,
+.counter .counter-box .title--orange {
+  color: #ed6622;
+}
+.counter .counter-box .counter-box-icon--blue,
+.counter .counter-box .title--blue {
+  color: #46a3ff;
+}
+.counter .counter-box h4 {
+  font-size: 4.2rem;
+  font-weight: 700;
+}
+.counter .counter-box h5 {
+  font-size: 1.8rem;
+  font-weight: 600;
+  text-transform: capitalize;
+  color: #222222;
+}
+
+.comments {
+  padding: 10rem 0;
+  background-color: #f4f9ff;
+}
+.comments .owl-carousel {
+  background-color: #fff;
+  padding: 6rem 2rem 3rem;
+  box-shadow: 0 0 1.7rem 0 rgba(0, 0, 0, 0.06);
+}
+.comments .owl-carousel .owl-prev {
+  background-color: #fff !important;
+  box-shadow: 0 0.2rem 0.5rem #757575;
+  width: 3rem;
+}
+.comments .owl-carousel .owl-prev span {
+  font-size: 3rem;
+}
+.comments .owl-carousel .owl-prev:hover span {
+  color: #1fa12e;
+}
+.comments .owl-carousel .owl-next {
+  margin-right: 1rem !important;
+  background-color: #fff !important;
+  box-shadow: 0 0.2rem 0.5rem #757575;
+  width: 3rem;
+}
+.comments .owl-carousel .owl-next span {
+  font-size: 3rem;
+}
+.comments .owl-carousel .owl-next:hover span {
+  color: #1fa12e;
+}
+.comments .item {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.comments .item .slider-img img {
+  width: 100%;
+  height: auto;
+}
+.comments .item .slider-content {
+  max-width: 40rem !important;
+  text-align: right;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 0.5rem;
+}
+.comments .item p {
+  font-style: italic;
+  font-size: 1.5rem;
+  color: #757575;
+}
+.comments .item h4 {
+  font-size: 1.8rem;
+  font-weight: 700;
+  text-transform: capitalize;
+  color: #222222;
+}
+
+.shop {
+  padding: 10rem 0;
+}
+.shop .square {
+  width: auto;
+  height: 35rem;
+  padding: 6rem 2rem 3rem;
+}
+.shop .info {
+  background: none;
+  background-color: rgba(31, 161, 46, 0.7) !important;
+}
+.shop .info h5 {
+  text-align: center;
+  padding: 1rem;
+  margin: 3rem 0 0 0;
+  background-color: unset !important;
+  font-size: 2.2rem;
+  color: #fff;
+  font-weight: 600;
+  text-transform: capitalize;
+}
+.shop .info h6 {
+  font-size: 2.6rem;
+  color: #fff;
+  font-weight: 600;
+  text-transform: capitalize;
+  margin-bottom: 10rem;
+}
+.shop .info span {
+  font-weight: 500;
+  background-color: #fff;
+  color: #1fa12e;
+  padding: 0.5rem 1.5rem;
+  border: 0.2rem solid #fff;
+  border-radius: 5rem;
+  transition: all 200ms ease-in;
+}
+
+.blog {
+  padding: 10rem 0;
+  background-color: #f4f9ff;
+}
+.blog .post {
+  display: flex;
+  align-items: stretch;
+}
+.blog .post .post-img img {
+  width: 23rem;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-top-right-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+}
+.blog .post .post-topic {
+  background-color: #fff;
+  display: flex;
+  gap: 1rem;
+  flex-direction: column;
+  padding: 1.8rem 3rem 1.8rem 1rem;
+  border-top-left-radius: 1rem;
+  border-bottom-left-radius: 1rem;
+}
+.blog .post .post-topic .post-topic__title {
+  color: #222222;
+  font-size: 2.2rem;
+  transition: all 200ms ease-in;
+}
+.blog .post .post-topic .post-topic__title:hover {
+  color: #1fa12e;
+}
+.blog .post .post-topic p {
+  font-size: 1.5rem;
+  color: #757575;
+}
+.blog .post .post-topic .post-info {
+  display: flex;
+  justify-content: space-between;
+}
+.blog .post .post-topic .post-info a {
+  color: #f44026;
+  transition: all 200ms ease-in;
+}
+.blog .post .post-topic .post-info a:hover {
+  color: #1fa12e;
+}
+.blog .post .post-topic .post-info span {
+  color: #1fa12e;
+}
+
+.team {
+  padding: 10rem 0;
+}
+
+.partner {
+  padding: 10rem 0;
+  background-color: #f4f9ff;
+}
+
+.footer {
+  padding-top: 20rem;
+  padding-bottom: 10rem;
+  background-color: #1c1c1c;
+}/*# sourceMappingURL=style.css.map */
